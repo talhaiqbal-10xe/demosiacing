@@ -1,22 +1,25 @@
 %% generation
+clear all;
 NoOfSummands = 5;
 BitWidthOfSummands=8;
 qBits=4;
 pBits=4;
-bit_map=generate_locations(BitWidthOfSummands,NoOfSummands,0);
+bit_map_add=generate_locations(BitWidthOfSummands,NoOfSummands,1);
+bit_map_mult=generate_locations(qBits,pBits,0);
 %% Initialization
-bit_map=initialize_locations(bit_map,BitWidthOfSummands,1);
+bit_map_add=initialize_locations(bit_map_add,BitWidthOfSummands);
+bit_map_mult=initialize_location_m(bit_map_mult,qBits,pBits);
 %location=zeros(NoOfSummands,BitWidthOfSummands+NoOfSummands-1);
 %location(:,NoOfSummands:end)=ones(NoOfSummands,BitWidthOfSummands);
 %NoOfCarries=zeros(1,BitWidthOfSummands+NoOfSummands-1);
 
-%%
+%% compression 
 dk=[2 3 4 6 9 13 19 28];
 start=find(dk<NoOfSummands);
 start_index=start(end);
 start=dk(start_index);
 iteration=1;
-while(start>2)
+while(start>1)
     for i=BitWidthOfSummands+NoOfSummands-1:-1:1
         s=sum(location(:,i))+NoOfCarries(i);
         if (s>start)
