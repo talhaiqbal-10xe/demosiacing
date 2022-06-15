@@ -9,7 +9,7 @@ for i=1:pBits
     qIndex=qBits;
     for j=1:pBits+qBits
         if ( j>offset && j <=offset+qBits)
-            out(j).names=strcat(out(j).names,'P',string(i),'Q',string(qIndex));
+            out(j).names=strcat(out(j).names,'P',string(i),'Q',string(qIndex),',');
             qIndex=qIndex-1;
             end
     end
