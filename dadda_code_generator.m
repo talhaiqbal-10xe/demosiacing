@@ -1,8 +1,16 @@
+%% generation
 NoOfSummands = 5;
 BitWidthOfSummands=8;
-location=zeros(NoOfSummands,BitWidthOfSummands+NoOfSummands-1);
-location(:,NoOfSummands:end)=ones(NoOfSummands,BitWidthOfSummands);
-NoOfCarries=zeros(1,BitWidthOfSummands+NoOfSummands-1);
+qBits=4;
+pBits=4;
+bit_map=generate_locations(BitWidthOfSummands,NoOfSummands,0);
+%% Initialization
+bit_map=initialize_locations(bit_map,BitWidthOfSummands,1);
+%location=zeros(NoOfSummands,BitWidthOfSummands+NoOfSummands-1);
+%location(:,NoOfSummands:end)=ones(NoOfSummands,BitWidthOfSummands);
+%NoOfCarries=zeros(1,BitWidthOfSummands+NoOfSummands-1);
+
+%%
 dk=[2 3 4 6 9 13 19 28];
 start=find(dk<NoOfSummands);
 start_index=start(end);
