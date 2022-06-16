@@ -19,49 +19,49 @@ assign F1i1L1_inp1 = A[1];
 assign F1i1L1_inp2 = B[1];
 assign F1i1L1_inp3 = C[1];
 reg sF1i1L1, cF1i1L1;
-FA F1i1L1( sF1i1L1,cF1i1L1,A[1],B[1],C[1] );
+FA F1i1L1( sF1i1L1,cF1i1L1,F1i1L1_inp1,F1i1L1_inp2,F1i1L1_inp3 );
 
 wire F1i1L2_inp1, F1i1L2_inp2, F1i1L2_inp3;
 assign F1i1L2_inp1 = A[2];
 assign F1i1L2_inp2 = B[2];
 assign F1i1L2_inp3 = C[2];
 reg sF1i1L2, cF1i1L2;
-FA F1i1L2( sF1i1L2,cF1i1L2,A[2],B[2],C[2] );
+FA F1i1L2( sF1i1L2,cF1i1L2,F1i1L2_inp1,F1i1L2_inp2,F1i1L2_inp3 );
 
 wire F1i1L3_inp1, F1i1L3_inp2, F1i1L3_inp3;
 assign F1i1L3_inp1 = A[3];
 assign F1i1L3_inp2 = B[3];
 assign F1i1L3_inp3 = C[3];
 reg sF1i1L3, cF1i1L3;
-FA F1i1L3( sF1i1L3,cF1i1L3,A[3],B[3],C[3] );
+FA F1i1L3( sF1i1L3,cF1i1L3,F1i1L3_inp1,F1i1L3_inp2,F1i1L3_inp3 );
 
 wire F1i1L4_inp1, F1i1L4_inp2, F1i1L4_inp3;
 assign F1i1L4_inp1 = A[4];
 assign F1i1L4_inp2 = B[4];
 assign F1i1L4_inp3 = C[4];
 reg sF1i1L4, cF1i1L4;
-FA F1i1L4( sF1i1L4,cF1i1L4,A[4],B[4],C[4] );
+FA F1i1L4( sF1i1L4,cF1i1L4,F1i1L4_inp1,F1i1L4_inp2,F1i1L4_inp3 );
 
 wire F1i1L5_inp1, F1i1L5_inp2, F1i1L5_inp3;
 assign F1i1L5_inp1 = A[5];
 assign F1i1L5_inp2 = B[5];
 assign F1i1L5_inp3 = C[5];
 reg sF1i1L5, cF1i1L5;
-FA F1i1L5( sF1i1L5,cF1i1L5,A[5],B[5],C[5] );
+FA F1i1L5( sF1i1L5,cF1i1L5,F1i1L5_inp1,F1i1L5_inp2,F1i1L5_inp3 );
 
 wire F1i1L6_inp1, F1i1L6_inp2, F1i1L6_inp3;
 assign F1i1L6_inp1 = A[6];
 assign F1i1L6_inp2 = B[6];
 assign F1i1L6_inp3 = C[6];
 reg sF1i1L6, cF1i1L6;
-FA F1i1L6( sF1i1L6,cF1i1L6,A[6],B[6],C[6] );
+FA F1i1L6( sF1i1L6,cF1i1L6,F1i1L6_inp1,F1i1L6_inp2,F1i1L6_inp3 );
 
 wire F1i1L7_inp1, F1i1L7_inp2, F1i1L7_inp3;
 assign F1i1L7_inp1 = A[7];
 assign F1i1L7_inp2 = B[7];
 assign F1i1L7_inp3 = C[7];
 reg sF1i1L7, cF1i1L7;
-FA F1i1L7( sF1i1L7,cF1i1L7,A[7],B[7],C[7] );
+FA F1i1L7( sF1i1L7,cF1i1L7,F1i1L7_inp1,F1i1L7_inp2,F1i1L7_inp3 );
 
 
 
@@ -82,49 +82,49 @@ assign F1i2L1_inp1 = D[1];
 assign F1i2L1_inp2 = E[1];
 assign F1i2L1_inp3 = cHi1L0;
 reg sF1i2L1, cF1i2L1;
-FA F1i2L1( sF1i2L1,cF1i2L1,D[1],E[1],cHi1L0 );
+FA F1i2L1( sF1i2L1,cF1i2L1,F1i2L1_inp1,F1i2L1_inp2,F1i2L1_inp3 );
 
 wire F1i2L2_inp1, F1i2L2_inp2, F1i2L2_inp3;
 assign F1i2L2_inp1 = D[2];
 assign F1i2L2_inp2 = E[2];
 assign F1i2L2_inp3 = cF1i1L1;
 reg sF1i2L2, cF1i2L2;
-FA F1i2L2( sF1i2L2,cF1i2L2,D[2],E[2],cF1i1L1 );
+FA F1i2L2( sF1i2L2,cF1i2L2,F1i2L2_inp1,F1i2L2_inp2,F1i2L2_inp3 );
 
 wire F1i2L3_inp1, F1i2L3_inp2, F1i2L3_inp3;
 assign F1i2L3_inp1 = D[3];
 assign F1i2L3_inp2 = E[3];
 assign F1i2L3_inp3 = cF1i1L2;
 reg sF1i2L3, cF1i2L3;
-FA F1i2L3( sF1i2L3,cF1i2L3,D[3],E[3],cF1i1L2 );
+FA F1i2L3( sF1i2L3,cF1i2L3,F1i2L3_inp1,F1i2L3_inp2,F1i2L3_inp3 );
 
 wire F1i2L4_inp1, F1i2L4_inp2, F1i2L4_inp3;
 assign F1i2L4_inp1 = D[4];
 assign F1i2L4_inp2 = E[4];
 assign F1i2L4_inp3 = cF1i1L3;
 reg sF1i2L4, cF1i2L4;
-FA F1i2L4( sF1i2L4,cF1i2L4,D[4],E[4],cF1i1L3 );
+FA F1i2L4( sF1i2L4,cF1i2L4,F1i2L4_inp1,F1i2L4_inp2,F1i2L4_inp3 );
 
 wire F1i2L5_inp1, F1i2L5_inp2, F1i2L5_inp3;
 assign F1i2L5_inp1 = D[5];
 assign F1i2L5_inp2 = E[5];
 assign F1i2L5_inp3 = cF1i1L4;
 reg sF1i2L5, cF1i2L5;
-FA F1i2L5( sF1i2L5,cF1i2L5,D[5],E[5],cF1i1L4 );
+FA F1i2L5( sF1i2L5,cF1i2L5,F1i2L5_inp1,F1i2L5_inp2,F1i2L5_inp3 );
 
 wire F1i2L6_inp1, F1i2L6_inp2, F1i2L6_inp3;
 assign F1i2L6_inp1 = D[6];
 assign F1i2L6_inp2 = E[6];
 assign F1i2L6_inp3 = cF1i1L5;
 reg sF1i2L6, cF1i2L6;
-FA F1i2L6( sF1i2L6,cF1i2L6,D[6],E[6],cF1i1L5 );
+FA F1i2L6( sF1i2L6,cF1i2L6,F1i2L6_inp1,F1i2L6_inp2,F1i2L6_inp3 );
 
 wire F1i2L7_inp1, F1i2L7_inp2, F1i2L7_inp3;
 assign F1i2L7_inp1 = D[7];
 assign F1i2L7_inp2 = E[7];
 assign F1i2L7_inp3 = cF1i1L6;
 reg sF1i2L7, cF1i2L7;
-FA F1i2L7( sF1i2L7,cF1i2L7,D[7],E[7],cF1i1L6 );
+FA F1i2L7( sF1i2L7,cF1i2L7,F1i2L7_inp1,F1i2L7_inp2,F1i2L7_inp3 );
 
 
 
@@ -145,49 +145,49 @@ assign F1i3L1_inp1 = sF1i1L1;
 assign F1i3L1_inp2 = cHi2L0;
 assign F1i3L1_inp3 = sF1i2L1;
 reg sF1i3L1, cF1i3L1;
-FA F1i3L1( sF1i3L1,cF1i3L1,sF1i1L1,cHi2L0,sF1i2L1 );
+FA F1i3L1( sF1i3L1,cF1i3L1,F1i3L1_inp1,F1i3L1_inp2,F1i3L1_inp3 );
 
 wire F1i3L2_inp1, F1i3L2_inp2, F1i3L2_inp3;
 assign F1i3L2_inp1 = sF1i1L2;
 assign F1i3L2_inp2 = cF1i2L1;
 assign F1i3L2_inp3 = sF1i2L2;
 reg sF1i3L2, cF1i3L2;
-FA F1i3L2( sF1i3L2,cF1i3L2,sF1i1L2,cF1i2L1,sF1i2L2 );
+FA F1i3L2( sF1i3L2,cF1i3L2,F1i3L2_inp1,F1i3L2_inp2,F1i3L2_inp3 );
 
 wire F1i3L3_inp1, F1i3L3_inp2, F1i3L3_inp3;
 assign F1i3L3_inp1 = sF1i1L3;
 assign F1i3L3_inp2 = cF1i2L2;
 assign F1i3L3_inp3 = sF1i2L3;
 reg sF1i3L3, cF1i3L3;
-FA F1i3L3( sF1i3L3,cF1i3L3,sF1i1L3,cF1i2L2,sF1i2L3 );
+FA F1i3L3( sF1i3L3,cF1i3L3,F1i3L3_inp1,F1i3L3_inp2,F1i3L3_inp3 );
 
 wire F1i3L4_inp1, F1i3L4_inp2, F1i3L4_inp3;
 assign F1i3L4_inp1 = sF1i1L4;
 assign F1i3L4_inp2 = cF1i2L3;
 assign F1i3L4_inp3 = sF1i2L4;
 reg sF1i3L4, cF1i3L4;
-FA F1i3L4( sF1i3L4,cF1i3L4,sF1i1L4,cF1i2L3,sF1i2L4 );
+FA F1i3L4( sF1i3L4,cF1i3L4,F1i3L4_inp1,F1i3L4_inp2,F1i3L4_inp3 );
 
 wire F1i3L5_inp1, F1i3L5_inp2, F1i3L5_inp3;
 assign F1i3L5_inp1 = sF1i1L5;
 assign F1i3L5_inp2 = cF1i2L4;
 assign F1i3L5_inp3 = sF1i2L5;
 reg sF1i3L5, cF1i3L5;
-FA F1i3L5( sF1i3L5,cF1i3L5,sF1i1L5,cF1i2L4,sF1i2L5 );
+FA F1i3L5( sF1i3L5,cF1i3L5,F1i3L5_inp1,F1i3L5_inp2,F1i3L5_inp3 );
 
 wire F1i3L6_inp1, F1i3L6_inp2, F1i3L6_inp3;
 assign F1i3L6_inp1 = sF1i1L6;
 assign F1i3L6_inp2 = cF1i2L5;
 assign F1i3L6_inp3 = sF1i2L6;
 reg sF1i3L6, cF1i3L6;
-FA F1i3L6( sF1i3L6,cF1i3L6,sF1i1L6,cF1i2L5,sF1i2L6 );
+FA F1i3L6( sF1i3L6,cF1i3L6,F1i3L6_inp1,F1i3L6_inp2,F1i3L6_inp3 );
 
 wire F1i3L7_inp1, F1i3L7_inp2, F1i3L7_inp3;
 assign F1i3L7_inp1 = sF1i1L7;
 assign F1i3L7_inp2 = cF1i2L6;
 assign F1i3L7_inp3 = sF1i2L7;
 reg sF1i3L7, cF1i3L7;
-FA F1i3L7( sF1i3L7,cF1i3L7,sF1i1L7,cF1i2L6,sF1i2L7 );
+FA F1i3L7( sF1i3L7,cF1i3L7,F1i3L7_inp1,F1i3L7_inp2,F1i3L7_inp3 );
 
 wire Hi3L8_inp1, Hi3L8_inp2;
 assign Hi3L8_inp1 = cF1i1L7;

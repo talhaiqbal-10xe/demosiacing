@@ -24,7 +24,7 @@ out.reg_statement=strcat(out.input_assign_statement3,'reg:',out.sum_bit,',:',out
 %% instatiating the module
 out_final=out.reg_statement;
 bits_new=bits-2;
-out_final=strcat(out_final,'FA:',out.adder_name,'(:',out.sum_bit,',',out.carry_bit,',',out.ha_inp1,',',out.ha_inp2,',',out.ha_inp3,':);');
+out_final=strcat(out_final,'FA:',out.adder_name,'(:',out.sum_bit,',',out.carry_bit,',',out.wire_inp1,',',out.wire_inp2,',',out.wire_inp3,':);');
 i=find(out_final==':');
 out_final(i)=' ';
 name_new=strcat(name(name_index(3)+1:end),out.sum_bit,',')
