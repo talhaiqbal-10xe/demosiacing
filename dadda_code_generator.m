@@ -1,9 +1,9 @@
 %% generation
 clear all;
-operands = 5;
-bitwidth=8;
-qBits=4;
-pBits=4;
+operands = 7;
+bitwidth=7;
+qBits=7;
+pBits=5;
 bit_map_add=generate_locations(bitwidth,operands,1);
 bit_map_mult=generate_locations(qBits,pBits,0);
 %% Initialization
@@ -12,13 +12,22 @@ bit_map_mult=initialize_location_m(bit_map_mult,qBits,pBits);
 
 
 %% compression 
-[out,bit_map_add_final]=compression_add(bit_map_add,5,5);
-fid =fopen('test.txt', 'w' );
-fprintf(fid, out);
+%[adder_def,bit_map_add_final]=compression_add(bit_map_add,operands,bitwidth);
+[adder_def,bit_map_add_final]=compression_add(bit_map_mult,qBits,pBits);
+
+%% writing verilog file
+module_def=module_definition(0,operands,bitwidth,qBits,pBits);
+fid =fopen('mult.v', 'w' );
+fprintf(fid,module_def);
 fclose(fid);
-while(1)
-    print('tree generated successfully');
-end
+fid =fopen('mult.v', 'a' );
+fprintf(fid,adder_def);
+fclose(fid);
+out_def=output_definition(bit_map_add_final);
+fid =fopen('mult.v', 'a' );
+fprintf(fid,out_def);
+fclose(fid);
+disp('module file created');
 
             
         

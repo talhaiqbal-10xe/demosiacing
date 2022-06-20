@@ -19,7 +19,7 @@ out.input_statement=strcat('wire:',out.wire_inp1,',:',out.wire_inp2,',:',out.wir
 out.input_assign_statement1=strcat(out.input_statement,'assign:',out.wire_inp1,' =: ',out.ha_inp1,';\n');
 out.input_assign_statement2=strcat(out.input_assign_statement1,'assign:',out.wire_inp2,' =: ',out.ha_inp2,';\n');
 out.input_assign_statement3=strcat(out.input_assign_statement2,'assign:',out.wire_inp3,' =: ',out.ha_inp3,';\n');
-out.reg_statement=strcat(out.input_assign_statement3,'reg:',out.sum_bit,',:',out.carry_bit,';\n');
+out.reg_statement=strcat(out.input_assign_statement3,'wire:',out.sum_bit,',:',out.carry_bit,';\n');
 
 %% instatiating the module
 out_final=out.reg_statement;

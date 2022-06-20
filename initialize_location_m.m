@@ -1,4 +1,5 @@
-function out = initialize_location_m(inp,qBits,pBits)
+function out = initialize_location_m(inp,qBits,pBits,s)
+
 offset=pBits;
 for i=1:length(inp)
     out(i).bits=inp(i).bits;
@@ -6,17 +7,17 @@ for i=1:length(inp)
 end
 
 for i=1:pBits
-    qIndex=qBits;
+    qIndex=qBits-1;
     for j=1:pBits+qBits
         if ( j>offset && j <=offset+qBits)
-            out(j).names=strcat(out(j).names,'P',string(i),'Q',string(qIndex),',');
+            out(j).names=strcat(out(j).names,'PP[',num2str(i-1),'][',num2str(qIndex),'],');
             qIndex=qIndex-1;
-            end
+        end
     end
     offset=offset-1;
 end
 for i=1:length(inp)
-    out(i).bits=length(find(convertStringsToChars(out(i).names)=='P'));
+    out(i).bits=length(find(convertStringsToChars(out(i).names)==','));
     
 end
 

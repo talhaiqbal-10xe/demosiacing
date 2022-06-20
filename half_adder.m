@@ -15,7 +15,7 @@ out.wire_inp2=strcat(out.adder_name,'_inp2');
 out.input_statement=strcat('wire:',out.wire_inp1,',:',out.wire_inp2,';\n');
 out.input_assign_statement1=strcat(out.input_statement,'assign:',out.wire_inp1,' =: ',out.ha_inp1,';\n');
 out.input_assign_statement2=strcat(out.input_assign_statement1,'assign:',out.wire_inp2,' =: ',out.ha_inp2,';\n');
-out.reg_statement=strcat(out.input_assign_statement2,'reg:',out.sum_bit,',:',out.carry_bit,';\n');
+out.reg_statement=strcat(out.input_assign_statement2,'wire:',out.sum_bit,',:',out.carry_bit,';\n');
 
 %% instatiating the module
 out_final=out.reg_statement;
