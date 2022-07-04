@@ -1,5 +1,8 @@
 Dadda Code generator
 
+NOTE: THIS IS NOT THE COMPLETE CODE FOR DEMOSIACING. IN FACT, THE CODE IS ONLY FOR MULTIPLICATIONS AND ADDITIONS.
+
+
 The main file is 'dadda_code_generator'
 
 operands = number of addition terms
